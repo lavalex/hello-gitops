@@ -30,4 +30,17 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: hello-app
+spec:
+  to:
+    kind: Service
+    name: hello-app
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
 
