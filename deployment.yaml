@@ -4,6 +4,7 @@ metadata:
   name: hello-app
   labels:
     app: hello-app
+    app.kubernetes.io/instance: hello-app
 spec:
   replicas: 1
   revisionHistoryLimit: 0  
@@ -28,6 +29,7 @@ metadata:
   name: hello-app
   labels:
     app: hello-app
+    app.kubernetes.io/instance: hello-app
 spec:
   selector:
     app: hello-app
@@ -41,6 +43,7 @@ metadata:
   name: hello-app
   labels:
     app: hello-app
+    app.kubernetes.io/instance: hello-app
 spec:
   to:
     kind: Service
