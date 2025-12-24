@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: bastion.ocp.tangram-soft.com:8443/myproject/hello-app:59b38b8
+        image: bastion.ocp.tangram-soft.com:8443/myproject/hello-app:0393581
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
